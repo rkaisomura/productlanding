@@ -1,0 +1,127 @@
+<style>
+#body{
+  background: url(background_music.jpg);
+}
+#header{
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  position: fixed;
+}
+#header-img{
+  border-radius: 8px;
+  width: 100px;
+}
+#nav-bar{
+  margin-left: 0%;
+}
+.nav-link{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+#form{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#features{
+  margin-left: 300px;  
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#email{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 35px;
+}
+#submit{
+  width: 200px;
+  color: white;
+  background-color: black;
+}
+#video{
+  display: flex;
+  flex-direction: column;
+  margin-left: 32%;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #d9d5d4;
+  margin: 10px;
+  padding: 50px;
+  font-size: 16px;
+  border-style: groove;
+}
+@media(max-width: 450px) {
+  body {
+    font-size: 17px;
+  }
+}
+#button{
+  color: white;
+  background-color: black;
+  margin-left: 32%;
+}
+</style>
+
+
+<body id="body">
+  <header id="header">
+    <img id="header-img" src="piano.jpg" alt="Piano logo"><br>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a> |
+      <a class="nav-link" href="#video">How it Works</a> |
+      <a class="nav-link" href="#products">Pricing</a>  
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h2> Want to know more about piano?</h2>
+        <input type="email" name="email" id="email" required placeholder="Enter your email address"><br>
+        <input type="submit" id="submit">
+        <br>
+      </form>
+    </article>
+    <article id="features">
+        <div>
+          <img src="background_music2" alt="Premium icon">
+	  <h2>Premium Courses</h2>
+          <p> you can select which courses would you like to learn.</p>
+        </div>
+    </article>
+    <p id="form">Video for your inspiration</p>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NPBCbTZWnq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
+    <article id="products">
+    <br>
+    	<div class="flex-container">
+      		<div>Beginner ($)
+		  <p>learn how to read music notes<br/>
+	          and to play with both hands</p>
+    		<br><button type="" id="button">Select</button></div>
+      		<div>Intermediate ($$)  
+		  <p>learn how to read music notes<br/>
+	          and to play with both hands</p>
+    		<br><button type="" id="button">Select</button></div>
+      		<div>Advanced ($$$)
+		  <p>learn how to read music notes<br/>
+	          and to play with both hands</p>
+    		<br><button type="" id="button">Select</button></div>  
+    	</div>
+    </article>
+  </main>
+</body>
+
